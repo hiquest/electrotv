@@ -1,0 +1,12 @@
+{
+  "name": "tvtracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.7.6"
+  },
+  "scripts": {
+    "start": "electron index.js"
+  }
+}

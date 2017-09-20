@@ -1,0 +1,100 @@
+.series {
+  .action {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    .icon {
+      color: white;
+      margin-right: 8px;
+    }
+    button {
+      cursor: pointer;
+      .f2, .f3 {
+        display: none;
+      }
+      &.followed:hover {
+        background-color: lighten($main, 10%);
+        .f3 {
+          display: inline;
+        }
+        .f1, .f2 {
+          display: none;
+        }
+      }
+      &.followed {
+        background-color: lighten($main, 20%);
+        .f2 {
+          display: inline;
+        }
+        .f1 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  position: relative;
+  width: 270px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,.1);
+  border: 1px solid #DBDBDB;
+  border-radius: 6px;
+  height: 270px;
+  padding: 20px;
+  overflow-y: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+//
+// Spinner
+//
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 50px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: $main;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}

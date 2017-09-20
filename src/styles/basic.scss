@@ -1,0 +1,68 @@
+input, textarea, select, a {
+  outline: none !important;
+}
+
+input:focus {
+  outline:none !important;
+  border: 1px solid #DBDBDB !important;
+  box-shadow: none !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+  color: #484848;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+input {
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 19px !important;
+  line-height: 24px !important;
+  letter-spacing: undefined !important;
+  padding-top: undefined !important;
+  padding-bottom: undefined !important;
+  color: #484848 !important;
+  font-weight: normal !important;
+  background-color: transparent !important;
+  border: 1px solid #DBDBDB !important;
+  padding: 11px !important;
+  width: 100% !important;
+  text-overflow: ellipsis !important;
+}
+
+.btn-primary {
+  background-color: $main;
+  color: white;
+  border: 0;
+  background-image: none;
+  transition: background-color 0.1s ease-in;
+  &:hover {
+    background-color: lighten($main, 10%);
+    background-image: none;
+  }
+  &:active {
+    background-color: darken($main, 10%);
+    background-image: none;
+  }
+  &.downloading {
+    background-color: red;
+  }
+}

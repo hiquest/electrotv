@@ -1,0 +1,43 @@
+// Vars
+
+$main: #875468;
+
+@import "./src/styles/basic";
+@import "./src/styles/components";
+@import "./src/styles/animations";
+
+.results {
+  overflow: hidden;
+  clear: both;
+  margin-top: 20px;
+}
+
+.episodes {
+  overflow: hidden;
+  clear: both;
+  margin-top: 22px;
+  .item {
+    height: 400px;
+    .show {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #aaa;
+      margin: 0 0 5px 0;
+    }
+  }
+}
+
+.groupHead {
+  display: inline-block;
+  padding: 3px 8px;
+  background-color: lighten($main, 50%);
+  border-radius: 6px;
+}
+
+// HELPERS
+
+.firm {
+  color: $main;
+}
+
+

@@ -4,9 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.7.6"
+    "electron": "^1.7.6",
+    "electron-prebuilt-compile": "^1.7.6"
   },
   "scripts": {
     "start": "electron index.js"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }

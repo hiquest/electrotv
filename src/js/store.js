@@ -61,6 +61,8 @@ function rm(id, cb) {
 }
 
 function available() {
+  if (!fs.existsSync(BASE)) { fs.mkdirSync(BASE); }
+  if (!fs.existsSync(BASE_STORE)) { fs.mkdirSync(BASE_STORE); }
   return fs
     .readdirSync(BASE_STORE)
     .filter(f => fs.statSync(path.join(BASE_STORE, f)).isDirectory());
